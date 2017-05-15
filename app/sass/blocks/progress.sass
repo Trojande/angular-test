@@ -1,0 +1,44 @@
+.progress
+    position: relative
+    padding-left: 5px
+    &_testapp
+        margin-top: 20px
+        margin-bottom: 26px
+    &__text
+        font-size: 12px
+        font-weight: bold
+    &__panel
+        background-color: #cecece
+        width: 120px
+        height: 13px
+        display: inline-block
+        margin-bottom: -2px
+        margin-left: 10px
+        padding-left: 3px
+        padding-top: 3px
+        padding-right: 3px
+        padding-bottom: 3px
+    &__bar
+        width: 0
+        height: 100%
+        background-color: #0489d1
+        position: relative
+        &:after
+            content: "";
+            width: 0
+            height: 0
+            top: 8px
+            right: -4px
+            margin: 5px auto
+            border: 5px solid transparent
+            border-top: 0
+            border-bottom-color: #626262
+            position: absolute
+    &__value
+        position: absolute
+        top: 17px
+        right: -8px
+        font-size: 12px
+        font-weight: bold
+        z-index: 2
+        
